@@ -3,20 +3,85 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sir Niffington</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <p>Sir Niffington</p>
-
-    <h1>Sir Niffington is a crazy dog</h1>
-    
-    <img
-    src="https://upload.wikimedia.org/wikipedia/commons/4/48/Silly_Dog_%282277051513%29.jpg"
-    alt="A silly looking dog."
-    width="400px"
-    />
+    <header>
+        <div class="mobile-header">
+            <button type="button" class="hamburger-button">
+                <img class="hamburger-icon" src="Images/hamburger.svg"
+                    alt="Three horizontal lines, positioned one above the other." />
+            </button>
+        </div>
+        <nav class="desktop-nav" aria-label="Primary">
+            <h1>NAVIGATIONS SECTION</h1>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Projects</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav display-none" aria-label="Primary">
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Projects</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <img class="big-pic" src=""
+        alt="A picture of Jennifer" />
+        <h1>HERO SECTION</h1>
+        <p>INTRODUCTION AND BACKGROUND INFO</p>
+        <a href="#" class="btn-primary">Lets Chat!</a>
+    </section>
+    <div class="divider"></div>
+<section class="about-me">
+    <img class="sml-pic" src=""
+    alt="A picture of Jennifer" />
+    <h2>ABOUT ME SECTION</h2>
+    <p>
+        HOBBIES, CAREER AND GOALS
+    </p>
+</section>
+<div class="divider"></div>
+<section class="contact">
+    <h2>Get in Touch</h2>
+    <form>
+        <label for="you-name">Your name</label>
+        <input type="text" id="your-name">
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Your Message</label>
+        <textarea name="message-text" id="message" rows="10"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+<footer>
+</footer>
 </body>
 
 </html>
