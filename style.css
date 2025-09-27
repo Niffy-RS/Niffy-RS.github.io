@@ -117,6 +117,36 @@ header button {
     }
 }
 
+/* the navigation bar */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(8, 10, 28, 0.36);
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/*links inside the navbar*/
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* change background on mouse-over*/
+.nav-bar a:hover {
+    color: var(--med-blue);
+}
+
 /* .mobile-nav */
 .mobile-nav a {
     text-decoration: none;
