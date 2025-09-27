@@ -1,57 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <div class="mobile-header">
-            <button type="button" class="hamburger-button">
-                <img class="hamburger-icon" src="Images/hamburger.svg"
-                    alt="Three horizontal lines, positioned one above the other." />
-            </button>
+            <img src="https:placeholder" alt="Portfolio Logo">
+            <button type="button" class="hamburger-menu">☰</button>
         </div>
-        <div class="nav-bar">
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="about">About</a>
-                <a href="contact">Contact</a>
+        <nav class="desktop-nav" aria-label="Main-Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav display-none" aria-label="Mobile-Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="hero">
-        <img class="big-pic" src="" alt="A picture of Jennifer" />
-        <h1>HERO SECTION</h1>
-        <p>INTRODUCTION AND BACKGROUND INFO</p>
-        <a href="#" class="btn-primary">Lets Chat!</a>
+            <h1>Hello, my name is Jennifer Roberts-Smith</h1>
+            <p>Aviation professional taking off in tech, ready to collaborate on your next project.</p>
+            <a href="#" class="button">Get in Touch!</a>
+            <img src="https:placeholder" alt="A picture of Jennifer Roberts-Smith">
     </section>
-    <div class="divider"></div>
-    <section class="about-me">
-        <img class="sml-pic" src="" alt="A picture of Jennifer" />
-        <h2>ABOUT ME SECTION</h2>
-        <p>
-            HOBBIES, CAREER AND GOALS
-        </p>
-    </section>
-    <div class="divider"></div>
-    <section class="contact">
-        <h2>Get in Touch</h2>
-        <form>
-            <label for="you-name">Your name</label>
-            <input type="text" id="your-name">
-            <label for="email">Your email</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Your Message</label>
-            <textarea name="message-text" id="message" rows="10"></textarea>
-            <input type="submit" value="Submit">
+    <section class="articles-container">
+        <article>
+            <h2>Article Title 1</h2>
+            <p>This is a brief summary of the first article.</p>
+            <a href="#" class="button">Read More</a>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>This is a brief introduction about myself.</p>
+            <img src="placeholder" alt="A picture of Jennifer Roberts-Smith">
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>html</li>
+                <li>javascript</li>
+            </ul>
+        </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
         </form>
     </section>
-    <footer>
-    </footer>
-</body>
 
+    <hr>
+
+    <footer>
+        <p>Follow along!</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jennifer-roberts-smith-5b4b4123/">LinkedIn</a></li>
+            <li><a href="github.com/jenniferrobertssmith">GitHub</a></li>
+        </ul>
+    </footer>
+
+</body>
 </html>
