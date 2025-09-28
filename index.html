@@ -1,57 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="mobile-header">
-            <button type="button" class="hamburger-button">
-                <img class="hamburger-icon" src="Images/hamburger.svg"
-                    alt="Three horizontal lines, positioned one above the other." />
-            </button>
-        </div>
-        <div class="nav-bar">
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="about">About</a>
-                <a href="contact">Contact</a>
+      <div class="nav-container">
+              <div class="mobile-header">
+        <button type="button" class="mobile-menu" onClick="toggleMenu()">
+          <img
+            class="square-menu-icon"
+            src="images/Mobile-Menu.svg"
+            alt="Mobile Menu Icon: four rounded squares in a 2x2 grid"
+          />
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      <nav class="mobile-nav display-none" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
     </header>
     <section class="hero">
-        <img class="big-pic" src="" alt="A picture of Jennifer" />
-        <h1>HERO SECTION</h1>
-        <p>INTRODUCTION AND BACKGROUND INFO</p>
-        <a href="#" class="btn-primary">Lets Chat!</a>
+      <h1>Welcome to the Portfolio of Jennifer Roberts-Smith</h1>
+      <p>
+        Aviation professional taking off in tech, ready to collaborate on your
+        next project.
+      </p>
+      <a href="#" class="btn-primary">Get in Touch</a>
     </section>
-    <div class="divider"></div>
     <section class="about-me">
-        <img class="sml-pic" src="" alt="A picture of Jennifer" />
-        <h2>ABOUT ME SECTION</h2>
-        <p>
-            HOBBIES, CAREER AND GOALS
-        </p>
+            <h2>About Jen</h2>
+      <img src="images/Jen pic.jpg" alt="A picture of Jennifer Roberts-Smith" />
+      <p>
+        <div>
+        A seasoned professional with over 13 years of dedicated experience in
+        airline operations, Jennifer has a proven track record in navigating the
+        complexities of aviation.</div>
+        <div>Outside of the high-stakes environment of airline operations, Jen possesses a rich a creative personal life. She
+        is an avid hobbyist, finding enjoyment and relaxation in crafts and
+        sewing, with her pooch, Cosmo, curled up beside her.</div>
+        <div> Looking ahead, Jen is proactively pivoting her skillset to meet the demands of the modern
+        digital landscape. She is currently enrolled in the SheCodes program,
+        where she is honing her skills in HTML, CSS, JavaScript, React, and
+        Python. Jen is eager to leverage her extensive operational experience
+        and newly acquired technical skills in a dynamic tech role, bridging the
+        gap between legacy systems innovative digital solutions.
+        </div>
+      </p>
     </section>
-    <div class="divider"></div>
+    <section class="articles-container">
+      <article>
+        <img class="icon" src="images/html.svg" alt="HTML Icon" />
+        <h3>HTML</h3>
+      </article>
+      <article>
+        <img class="icon" src="images/python.svg" alt="Python Icon" />
+        <h3>Python</h3>
+      </article>
+      <article>
+        <img class="icon" src="images/javascript.svg" alt="JavaScript Icon" />
+        <h3>JavaScript</h3>
+      </article>
+      <article>
+        <img class="icon" src="images/django.svg" alt="django Icon" />
+        <h3>Django</h3>
+      </article>
+      <article>
+        <img class="icon" src="images/react.png" alt="react Icon" />
+        <h3>React</h3>
+      </article>
+    </section>
     <section class="contact">
-        <h2>Get in Touch</h2>
-        <form>
-            <label for="you-name">Your name</label>
-            <input type="text" id="your-name">
-            <label for="email">Your email</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Your Message</label>
-            <textarea name="message-text" id="message" rows="10"></textarea>
-            <input type="submit" value="Submit">
-        </form>
+      <h2>Get in touch</h2>
+      <form>
+        <label for="name">Your name</label>
+        <input type="text" id="your-name" name="name" required />
+        <label for="email">Your email</label>
+        <input type="email" id="your-email" name="email" required />
+        <label for="message">Your message</label>
+        <textarea id="your-message" name="message" rows="10"></textarea>
+        <input type="submit" value="Submit" />
+      </form>
     </section>
     <footer>
+      <a
+        href="https://au.linkedin.com/"
+        title="LinkedIn Profile"
+      >
+        <img
+          class="socials-icon"
+          src="images/linkedin.svg"
+          alt="LinkedIn Icon: a black circle with the white letters in"
+        />
+      </a>
+      <a href="https://github.com/Niffy-RS" title="GitHub Profile">
+        <img
+          class="socials-icon"
+          src="images/github.svg"
+          alt="GitHub Icon: a black circle with the white image of a cat with an octopus body"
+        />
+      </a>
     </footer>
-</body>
-
+  </body>
 </html>
