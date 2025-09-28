@@ -8,7 +8,8 @@
   </head>
   <body>
     <header>
-      <div class="mobile-header">
+      <div class="nav-container">
+              <div class="mobile-header">
         <button type="button" class="mobile-menu" onClick="toggleMenu()">
           <img
             class="square-menu-icon"
@@ -16,40 +17,31 @@
             alt="Mobile Menu Icon: four rounded squares in a 2x2 grid"
           />
         </button>
-      </div>
-      <div class="nav-container">
         <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="about">About</a></li>
-          <li><a href="project">Projects</a></li>
+          <li><a href="project.html">Projects</a></li>
           <li><a href="contact">Contact</a></li>
         </ul>
-      </div>
       <nav class="mobile-nav display-none" aria-label="Primary">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="about">About</a></li>
-          <li><a href="projects">Projects</a></li>
+          <li><a href="project.html">Projects</a></li>
           <li><a href="contact">Contact</a></li>
         </ul>
       </nav>
+      </div>
     </header>
     <main>
-      <section class="projects">
-        <h2>Projects</h2>
-        <p>Here are some of the projects I've worked on recently:</p>
+      <div class="hero">
+        <h1>My Projects</h1>
+        <p>Explore some of the projects I've worked on.</p>
+      </div>
         <div class="project-list">
           <article>
-            <h3>Project One</h3>
-            <p>A brief description of Project One.</p>
-          </article>
-          <article>
-            <h3>Project Two</h3>
-            <p>A brief description of Project Two.</p>
-          </article>
-          <article>
-            <h3>Project Three</h3>
-            <p>A brief description of Project Three.</p>
+            <h3>HTML</h3>
+            <p>This project involved learning the fundamentals of HTML/CSS</p>
           </article>
         </div>
       </section>
