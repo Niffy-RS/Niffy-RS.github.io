@@ -1,82 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <header>
-        <div class="mobile-header">
-            <img src="https:placeholder" alt="Portfolio Logo">
-            <button type="button" class="hamburger-menu">☰</button>
-        </div>
-        <nav class="desktop-nav" aria-label="Main-Navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="mobile-nav display-none" aria-label="Mobile-Navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="mobile-header">
+        <button type="button" class="mobile-menu" onClick="toggleMenu()">
+          <img
+            class="square-menu-icon"
+            src="images/Mobile-Menu.svg"
+            alt="Mobile Menu Icon: four rounded squares in a 2x2 grid"
+          />
+        </button>
+      </div>
+      <div class="nav-container">
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+      <nav class="mobile-nav display-none" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="hero">
-            <h1>Hello, my name is Jennifer Roberts-Smith</h1>
-            <p>Aviation professional taking off in tech, ready to collaborate on your next project.</p>
-            <a href="#" class="button">Get in Touch!</a>
-            <img src="https:placeholder" alt="A picture of Jennifer Roberts-Smith">
+      <h1>Welcome to the Portfolio of Jennifer Roberts-Smith</h1>
+      <p>
+        Aviation professional taking off in tech, ready to collaborate on your
+        next project.
+      </p>
+      <a href="#" class="btn-primary">Get in Touch</a>
+    </section>
+    <section class="about-me">
+            <h2>About Jen</h2>
+      <img src="images/Jen pic.jpg" alt="A picture of Jennifer Roberts-Smith" />
+      <p>
+        <div>
+        A seasoned professional with over 13 years of dedicated experience in
+        airline operations, Jennifer has a proven track record in navigating the
+        complexities of aviation.</div>
+        <div>Outside of the high-stakes environment of airline operations, Jen possesses a rich a creative personal life. She
+        is an avid hobbyist, finding enjoyment and relaxation in crafts and
+        sewing, with her pooch, Cosmo, curled up beside her.</div>
+        <div> Looking ahead, Jen is proactively pivoting her skillset to meet the demands of the modern
+        digital landscape. She is currently enrolled in the SheCodes program,
+        where she is honing her skills in HTML, CSS, JavaScript, React, and
+        Python. Jen is eager to leverage her extensive operational experience
+        and newly acquired technical skills in a dynamic tech role, bridging the
+        gap between legacy systems innovative digital solutions.
+        </div>
+      </p>
     </section>
     <section class="articles-container">
-        <article>
-            <h2>Article Title 1</h2>
-            <p>This is a brief summary of the first article.</p>
-            <a href="#" class="button">Read More</a>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>This is a brief introduction about myself.</p>
-            <img src="placeholder" alt="A picture of Jennifer Roberts-Smith">
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>html</li>
-                <li>javascript</li>
-            </ul>
-        </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+      <article>
+        <img class="icon" src="images/html.svg" alt="HTML Icon" />
+        <h3>HTML</h3>
+      </article>
+      <article>
+        <img class="icon" src="images/python.svg" alt="Python Icon" />
+        <h3>Python</h3>
+      </article>
+      <article>
+        <img class="icon" src="images/javascript.svg" alt="JavaScript Icon" />
+        <h3>JavaScript</h3>
+      </article>
+      <article>
+        <img class="icon" src="images/django.svg" alt="django Icon" />
+        <h3>Django</h3>
+      </article>
+      <article>
+        <img class="icon" src="images/react.png" alt="react Icon" />
+        <h3>React</h3>
+      </article>
     </section>
-
-    <hr>
-
+    <section class="contact">
+      <h2>Get in touch</h2>
+      <form>
+        <label for="name">Your name</label>
+        <input type="text" id="your-name" name="name" required />
+        <label for="email">Your email</label>
+        <input type="email" id="your-email" name="email" required />
+        <label for="message">Your message</label>
+        <textarea id="your-message" name="message" rows="10"></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
     <footer>
-        <p>Follow along!</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/jennifer-roberts-smith-5b4b4123/">LinkedIn</a></li>
-            <li><a href="github.com/jenniferrobertssmith">GitHub</a></li>
-        </ul>
+      <a
+        href="https:linkedin.com/in/jennifer-roberts-smith"
+        title="LinkedIn Profile"
+      >
+        <img
+          class="socials-icon"
+          src="images/linkedin.svg"
+          alt="LinkedIn Icon: a black circle with the white letters in"
+        />
+      </a>
+      <a href="https:github.com/jenniferrobertssmith" title="GitHub Profile">
+        <img
+          class="socials-icon"
+          src="images/github.svg"
+          alt="GitHub Icon: a black circle with the white image of a cat with an octopus body"
+        />
+      </a>
     </footer>
-
-</body>
+  </body>
 </html>
